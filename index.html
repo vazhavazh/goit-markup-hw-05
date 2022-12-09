@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header test">
+    <header class="header">
       <div class="container main-header">
         <a href="./index.html" class="logo-link">
           <span class="logo">Web</span><span class="logo-back">Studio</span>
@@ -63,7 +63,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">
+          <button type="button" data-modal-open class="hero-button">
             <span class="button-name">Замовити послугу</span>
           </button>
         </div>
@@ -136,6 +136,9 @@
                 alt="Людина працює за комп'ютером"
                 width="370"
               />
+              <div class="job-title-container">
+                <h3 class="job-item-title">Десктопні додатки</h3>
+              </div>
             </li>
             <li class="job-item">
               <img
@@ -143,6 +146,10 @@
                 alt="Людина тримає в руках телефон і працює за комп'ютером"
                 width="370"
               />
+
+              <div class="job-title-container">
+                <h3 class="job-item-title">Мобільні додатки</h3>
+              </div>
             </li>
             <li class="job-item">
               <img
@@ -150,6 +157,9 @@
                 alt="Людина обирає колір з палітри на планшеті"
                 width="370"
               />
+              <div class="job-title-container">
+                <h3 class="job-item-title">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -453,5 +463,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrope is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="button-modal-close">
+          <svg class="icon-close-black" width="18" height="18">
+            <use href="./image/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
